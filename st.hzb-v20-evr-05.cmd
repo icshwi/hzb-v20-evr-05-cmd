@@ -1,13 +1,12 @@
 require evr-timestamp-buffer,2.5.0
 
-epicsEnvSet("SYS", "HZB-V20:TS")
-
 epicsEnvSet("EPICS_CMDS", "/epics/iocs/cmds")
 # Find the PCI bus number for the cards in the crate
 system("$(EPICS_CMDS)/mrfioc2-common-cmd/find_pci_bus_id.bash")
 < "$(EPICS_CMDS)/mrfioc2-common-cmd/pci_bus_id"
-
 epicsEnvSet("PCI_SLOT", "$(PCI_BUS_NUM):0e.0")
+
+epicsEnvSet("SYS", "HZB-V20:TS")
 epicsEnvSet("DEVICE", "EVR-05")
 epicsEnvSet("EVR", "$(DEVICE)")
 epicsEnvSet("CHIC_SYS", "HZB-V20:")
