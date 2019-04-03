@@ -1,2 +1,2 @@
-alias("HZB-V20:Chop-Drv-05tmp01:TDC_Unix", "chopper_6_A")
-alias("HZB-V20:Chop-Drv-05tmp02:TDC_Unix", "chopper_7_A")
+alias("HZB-V20:Chop-Drv-0501:TDC_Unix", "chopper_6_A")
+alias("HZB-V20:Chop-Drv-0502:TDC_Unix", "chopper_7_A")
